@@ -2,7 +2,6 @@
   "name": "parcel-config-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -11,14 +10,27 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "process": "^0.11.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.21.8",
     "babel-plugin-transform-remove-console": "^6.9.4",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
   }
 }
