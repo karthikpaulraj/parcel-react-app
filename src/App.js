@@ -9,13 +9,17 @@ import Body from "./pages/Body";
 import Contact from "./pages/Contact";
 import ErrorPage from "./components/ErrorPage";
 
+/* Redux Store */
+import { Provider } from "react-redux";
+import store from "./utils/reduxStore";
+
 const AppLayout = () => {
   return (
-    <>
+    <Provider store={store}>
       <Header />
       <Body />
       <Footer />
-    </>
+    </Provider>
   );
 };
 
